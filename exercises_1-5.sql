@@ -70,5 +70,5 @@ LIMIT 2 OFFSET 0;
 
 SELECT population, country, city FROM north_american_cities;
 WHERE country LIKE "United States"
-ORDER BY population DESC
+ORDER BY population ASC
 LIMIT 2 OFFSET 2;
