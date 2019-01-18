@@ -34,3 +34,11 @@ FROM Buildings
         ON Building_name = Building
 WHERE Building IS NULL;
 --exercise 9
+SELECT Title, (Domestic_sales + International_sales)/1000000 AS Millions  FROM movies
+INNER JOIN Boxoffice ON Movie_id = Id	
+
+SELECT Title, Rating * 10 FROM movies
+INNER JOIN Boxoffice ON Movie_id = Id
+
+SELECT Title, Year FROM movies
+WHERE year %2=0; 
