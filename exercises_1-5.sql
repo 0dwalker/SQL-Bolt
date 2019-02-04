@@ -9,6 +9,8 @@ SELECT title, year FROM movies;
 
 SELECT title, year FROM movies;
 
+
+
 --exercise 2
 SELECT id, title FROM movies
 WHERE id = 6;
@@ -22,6 +24,8 @@ WHERE year not between 2000 and 2010;
 SELECT id, title FROM movies
 WHERE id <= 5;
 
+
+
 --exercise 3
 SELECT title FROM movies
 WHERE title LIKE '%toy story%';
@@ -34,6 +38,8 @@ WHERE director NOT LIKE 'John Lasseter';
 
 SELECT title FROM movies
 WHERE title LIKE '%wall%';
+
+
 
 --exercise 4
 SELECT DISTINCT director FROM movies
@@ -50,6 +56,8 @@ LIMIT 5 OFFSET 0;
 SELECT title FROM movies
 ORDER BY title ASC
 LIMIT 5 OFFSET 5;
+
+
 
 --exercise 5
 SELECT city, population FROM north_american_cities
